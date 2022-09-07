@@ -1,7 +1,7 @@
-@import 'styles.scss';
+@use "scss/defaults/colors";
 
 .card {
-  border-width: 0px;
+  border-width: 0;
   break-inside: avoid;
 
   .progress {
@@ -9,7 +9,7 @@
   }
 
   &.error {
-    color: $s3gw-color-white;
-    background-color: $s3gw-color-error;
+    color: colors.$s3gw-color-white;
+    background-color: colors.$s3gw-color-error;
   }
 }

@@ -1,4 +1,6 @@
-@import 'styles.scss';
+@use '~bootstrap/scss/bootstrap';
+@use 'src/scss/defaults/colors';
+@use 'src/scss/defaults/variables';
 
 li {
   border-left: 5px solid transparent;
@@ -6,20 +8,20 @@ li {
 
   a,
   a:hover {
-    color: $s3gw-color-menu-item-text;
+    color: colors.$s3gw-color-menu-item-text;
   }
 
   &:hover {
-    background-color: $s3gw-color-menu-item-hover-background;
-    border-left: 5px solid $s3gw-color-menu-item-hover-border;
+    background-color: colors.$s3gw-color-menu-item-hover-background;
+    border-left: 5px solid colors.$s3gw-color-menu-item-hover-border;
   }
 
   &.selected {
-    background-color: $s3gw-color-menu-item-selected-background;
+    background-color: colors.$s3gw-color-menu-item-selected-background;
 
     a,
     a:hover {
-      color: $s3gw-color-menu-item-selected-text;
+      color: colors.$s3gw-color-menu-item-selected-text;
     }
   }
 
@@ -27,13 +29,13 @@ li {
     border-left: 5px solid transparent !important;
 
     &:hover {
-      border-left: 5px solid $s3gw-color-menu-item-hover-border !important;
+      border-left: 5px solid colors.$s3gw-color-menu-item-hover-border !important;
     }
   }
 }
 
 i {
-  margin-right: $s3gw-margin;
+  margin-right: variables.$s3gw-margin;
 }
 
 .rotated {

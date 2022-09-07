@@ -1,13 +1,13 @@
-@import 'src/scss/defaults/colors';
-@import 'src/scss/defaults/fonts';
-@import 'src/scss/defaults/variables';
+@use 'src/scss/defaults/colors';
+@use 'src/scss/defaults/fonts';
+@use 'src/scss/defaults/variables';
 
 .s3gw-login-page {
-  background-color: $s3gw-color-cultured;
+  background-color: colors.$s3gw-color-cultured;
 
   .sidebar {
-    background-color: $s3gw-color-cg-blue;
-    color: $s3gw-color-cultured;
+    background-color: colors.$s3gw-color-cg-blue;
+    color: colors.$s3gw-color-cultured;
     max-width: 20rem;
     min-width: 20rem;
 
@@ -22,7 +22,7 @@
       }
 
       .title {
-        font-family: $s3gw-font-family-headings;
+        font-family: fonts.$s3gw-font-family-headings;
         font-size: 2.5rem;
         font-weight: lighter;
       }
@@ -35,7 +35,7 @@
 
   .main {
     .header {
-      height: $s3gw-site-header-height;
+      height: variables.$s3gw-site-header-height;
     }
 
     .content {
